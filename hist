@@ -1,0 +1,192 @@
+
+  Id     Duration CommandLine
+  --     -------- -----------
+   1        0.301 cdß
+   2        0.005 cd\
+   3        0.004 cd .\CLOUD\
+   4        0.004 cd .\Development.GitHub\
+   5        0.003 cd .\Repositories.FromGithub\
+   6        0.042 dir
+   7        0.021 rm .\clone_r14rdir
+   8        0.003 cd .\repositories\
+   9        0.015 dir
+  10        0.004 cd r14r
+  11        0.009 dir Elm*
+  12        0.007 dir *elm*
+  13        0.068 dir *gett*
+  14        0.120 mkdir Elm_Getting-Started
+  15        0.005 cd Elm_Getting-Started
+  16        0.161 wget https://concourse-ci.org/docker-compose.yml
+  17        0.155 wget
+  18        0.146 alias
+  19        0.143 alias| findstr invoke
+  20        1.584 Invoke-WebRequest https://concourse-ci.org/docker-compose.yml -O docker-compose.yml
+  21 17:11:12.632 docker-compose up
+  22        4.528 minikube
+  23        0.427 minikube version
+  24     5:02.763 minikube start
+  25        0.802 kubectl cluster-info
+  26        0.185 kubectl get node
+  27        0.147 kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+  28        0.230 kubectl get deployments
+  29       44.482 kubectl proxy
+  30        2.006 kubectl proxy &
+  31        0.272 jobs
+  32        0.173  kubectl proxy
+  33        0.302 curl http://localhost:8001/version
+  34        0.703 export POD_NAME=$(kubectl get pods -o go-template --tmplate '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+  35        0.404 export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+  36        0.227 kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}'
+  37        0.222 kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\\n"}}{{end}}'
+  38        0.211 kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{end}}'
+  39        0.218 kubectl get pods
+  40        0.227 kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{end}}'
+  41        0.211 kubctl delete pod
+  42        0.158 kubectl delete pod
+  43        0.142 kubectl delete pod --help
+  44       35.978 kubectl delete pod --all
+  45        0.363 kubctl delete pod
+  46        0.153 kubectl get pods
+  47        0.151 kubectl get pods
+  48        0.169 kubctl delete pod --all
+  49     1:02.336 kubectl delete pod --all
+  50       13.014 minikube status
+  51        6.473 minikube start
+  52        0.396 minikube version
+  53     8:59.525 minikube start
+  54        0.464 kubectl cluster-info
+  55        0.006 cd ..
+  56        0.125 mkdir Kuberbetes_Getting-Started
+  57        0.006 cd .\Kuberbetes_Getting-Started\
+  58        0.147 kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+  59        0.164 kubectl get deployments
+  60        0.123 kubectl delete deployment 
+  61        0.180 kubectl delete deployment  hello-minikube
+  62        0.154 kubectl get deployments
+  63        0.818 kubectl describe pods
+  64        0.419 kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{end}}'
+  65        0.339 $PODNAME=kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{end}}'
+  66        0.011 $PODNAME
+  67        2.831 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME/proxy/
+  68        0.103 get-job
+  69        2.349 curl http://localhost:8001
+  70        0.180 kubectl proxy
+  71        6.585 remove-job
+  72        4.381 stop-job
+  73        1.980 remove-job
+  74        0.280 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME/proxy/
+  75        0.266 curl http://localhost:8001
+  76        0.270 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME/proxy/
+  77        0.291 curl http://localhost:8001/api/v1/namespaces/default
+  78        0.282 curl http://localhost:8001/api/v1/namespaces/default/pods
+  79        0.003 $PODNAME
+  80        0.386 kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{end}}'
+  81        0.169 $PODNAME=kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{end}}'
+  82        0.002 $PODNAME
+  83        0.287 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME
+  84        0.266 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME/proxy
+  85        0.332 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME/proxy
+  86        0.281 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME
+  87        0.330 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME| findstr proxy
+  88        0.055 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME -O -
+  89        0.060 curl http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME -O-
+  90        0.169 alias curl
+  91        2.462 Invoke-WebRequest http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME
+  92        2.187 Invoke-WebRequest http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME/proxy
+  93        2.086 Invoke-WebRequest http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME/proxy
+  94        2.081 Invoke-WebRequest http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME
+  95        2.065 Invoke-WebRequest http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME/generateName
+  96        2.049 Invoke-WebRequest http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME
+  97        2.060 Invoke-WebRequest http://localhost:8001/api/v1/namespaces/default/pods/$PODNAME
+  98        0.258 StatusCode        : 200
+  99        0.267 StatusDescription : OK
+ 100        0.240 kubectl logs $PODNAME
+ 101        0.418 kubectl exeecute $PODNAME env
+ 102        0.457 kubectl execute $PODNAME env
+ 103        0.472 kubectl exec $PODNAME env
+ 104        3.829 kubectl exec -ti $PODNAME bash
+ 105    20:22.880 kubectl exec -ti $PODNAME bash
+ 106        0.426 kubectl get pods
+ 107        0.187 kubectl get services
+ 108        0.222 kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
+ 109        0.143 kubectl get services
+ 110        0.425 kubectl describe services/kubernetes-bootcamp
+ 111        0.231 kubectl describe services/kubernetes-bootcamp
+ 112        0.079 Name:                     kubernetes-bootcamp
+ 113        0.044 Namespace:                default
+ 114        0.043 Labels:                   app=kubernetes-bootcamp
+ 115        0.011 Annotations:              <none>
+ 116        0.044 Selector:                 app=kubernetes-bootcamp
+ 117        0.050 Type:                     NodePort
+ 118        0.000 IP Families:              <none>
+ 119        0.051 IP:                       10.98.244.121
+ 120        0.047 IPs:                      10.98.244.121
+ 121        0.000 Port:                     <unset>  8080/TCP
+ 122        0.053 TargetPort:               8080/TCP
+ 123        0.000 NodePort:                 <unset>  31603/TCP
+ 124        0.052 Endpoints:                172.17.0.5:8080
+ 125        0.278 Session Affinity:         None
+ 126        0.245 External Traffic Policy:  Cluster
+ 127        0.000 Events:                   <none>
+ 128        0.138 $NODEPORT=kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}'
+ 129        0.003 $NODEPORT
+ 130       54.359 curl $(minikube ip):$NODE_PORT
+ 131        0.246 minicube ip
+ 132        1.178 minikube
+ 133       23.784 minikube ip
+ 134       16.829 minikube ip
+ 135        0.266 NODE_IP=minikube ip
+ 136       16.144 $NODE_IP=minikube ip
+ 137        0.000 Invoke-WebRequest $NODE_IP:$NODE_PORT
+ 138        0.001 $NODE_IP
+ 139        0.006 cd ..
+ 140        0.265 dir
+ 141        0.064 dir java*
+ 142        0.007 dir *matter
+ 143        0.033 dir *matter*
+ 144        0.005 cd Angular_Working-with_matterjs
+ 145        0.020 dir
+ 146        0.008 mkdir app
+ 147        0.440 move * app
+ 148        0.011 dir
+ 149        0.006 cd app
+ 150        0.023 dir
+ 151        0.005 cd ..
+ 152        0.008 mkdir repositories
+ 153        0.005 cd .\repositories\
+ 154        3.257 git clone https://github.com/CodingTrain/p5-matter
+ 155        0.007 cd .\p5-matter\
+ 156        0.015 dir
+ 157        0.918 kubectl get services
+ 158        0.025 dir
+ 159        0.015 cd .\01_basics\
+ 160        0.021 dir
+ 161        0.011 cd ..
+ 162        1.714 code .
+ 163        2.569 D:\CLOUD\Environments\Frontend\set_env.ps1
+ 164        0.006 cd ..
+ 165        0.010 cd .\Angular_Working-with_Material-Design\
+ 166        0.006 cd ..
+ 167        0.008 cd .\Angular_Working-with_matterjs\
+ 168        0.017 dir
+ 169        0.012 cd .\repositories\
+ 170        0.023 dir
+ 171        0.010 cd .\p5-matter\
+ 172        0.020 dir
+ 173        1.474 code .
+ 174        0.640 dirf
+ 175        0.040 dir
+ 176        0.021 cd ..
+ 177        0.031 dir
+ 178        0.020 cd .\p5-matter\
+ 179        0.055 dir
+ 180        0.088 dir /a
+ 181        3.475 rmdir .git
+ 182        1.341 $NODEPORT=kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}'
+ 183        0.029 cd ..
+ 184        0.051 cd ..
+ 185        0.023 cd ..
+ 186        0.025 cd .\Kuberbetes_Getting-Started\
+ 187        0.034 dir
+ 188        0.617 history
+
